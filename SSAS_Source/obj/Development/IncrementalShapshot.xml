@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_Demo</Database>
+    <Server>DESKTOP-PUKI\PHUCNT</Server>
+    <ConnectionString>Data Source=DESKTOP-PUKI\PHUCNT;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>6taAZpkgbxpML5/3EX0VU15RHXQ=26/10/2024 7:59:01 pm26/10/2024 7:06:24 pm</TimeStamp>
+        <ID>
+          <String>Crime Database</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>JAn1cFtY1HVxooGgm73Nyua02aU=26/10/2024 7:07:10 pm26/10/2024 7:07:10 pm</TimeStamp>
+        <ID>
+          <String>Crime Database</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6AKy0wWoP5pVeHbbb72Jk+0pneA=02/11/2024 3:26:16 pm26/10/2024 9:07:00 pm</TimeStamp>
+        <ID>
+          <String>Dim Date OCC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tQXoU8TDP17WDoFWJl6u/3xEkuU=27/10/2024 8:23:37 pm26/10/2024 9:07:20 pm</TimeStamp>
+        <ID>
+          <String>Dim Weapon</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>W7r85zC1OGayrYcZr5pDeAf7aCw=27/10/2024 8:23:37 pm26/10/2024 9:07:20 pm</TimeStamp>
+        <ID>
+          <String>Dim Premis</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RXCMt7wDtDKyyflpfkpldy2HfVM=05/11/2024 2:14:37 pm26/10/2024 9:07:20 pm</TimeStamp>
+        <ID>
+          <String>Dim DR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p2QpbCH/lcOFW49eFxzw7IyFtIY=27/10/2024 8:23:37 pm26/10/2024 9:07:20 pm</TimeStamp>
+        <ID>
+          <String>Dim AREA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oRdEKIfKgu1gJtnRrUq5hCfSaTE=27/10/2024 8:23:37 pm26/10/2024 9:07:20 pm</TimeStamp>
+        <ID>
+          <String>Dim Status</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XD6hiCOh7Wwn9yVLG6803atROtQ=27/10/2024 8:23:37 pm26/10/2024 9:07:20 pm</TimeStamp>
+        <ID>
+          <String>Dim CRM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gF9CHOtSxqQLs+gSUh2h+AzSpdk=27/10/2024 7:59:48 pm27/10/2024 7:46:21 pm</TimeStamp>
+        <ID>
+          <String>Dim Date Rptd</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>fyv2vkICNbZAQ5LAJaeR5dS6In0=10/11/2024 4:42:39 pm27/10/2024 7:47:12 pmfrd2sSqRJIzwgXaXf/D4vPthTZc=04/11/2024 4:39:24 pm27/10/2024 7:47:12 pm</TimeStamp>
+        <ID>
+          <String>Crime Database</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>bay1qaY1iXncoEs50n1i23k9u8k=26/10/2024 2:57:11 pm26/10/2024 2:57:11 pm</TimeStamp>
+      <ID>
+        <String>SSAS_Demo</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-11-10T10:40:24.556667Z</LastDeployed>
+</DeploymentSnapshot>

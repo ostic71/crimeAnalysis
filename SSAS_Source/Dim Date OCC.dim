@@ -1,0 +1,363 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e0936144-3a8a-4edf-b7fe-c3575dc81898" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Date OCC</ID>
+  <Name>Dim Date OCC</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2733" scrolltop="-5007" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="4313" y="17939" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dim_DateOCC" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2500" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000c4090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Dim_DateOCC" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2733</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5007</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="199">
+            <Shape Id="Date OCC ID" Expanded="false">
+              <Attributes>
+                <Attribute Id="Date OCC ID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="DATE OCC" Expanded="false">
+              <Attributes>
+                <Attribute Id="DATE OCC" />
+              </Attributes>
+              <Position x="273" y="20" />
+            </Shape>
+            <Shape Id="Month OCC" Expanded="false">
+              <Attributes>
+                <Attribute Id="Month OCC" />
+              </Attributes>
+              <Position x="527" y="20" />
+            </Shape>
+            <Shape Id="Quarter OCC" Expanded="false">
+              <Attributes>
+                <Attribute Id="Quarter OCC" />
+              </Attributes>
+              <Position x="781" y="20" />
+            </Shape>
+            <Shape Id="Year OCC" Expanded="false">
+              <Attributes>
+                <Attribute Id="Year OCC" />
+              </Attributes>
+              <Position x="1035" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="40ea1fac-5096-4c57-be4b-2bff924cf2d2">
+    <DataSourceViewID>Crime Database</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="8c885ca2-5e92-4040-b25b-151c5e0f45a6">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="e25adad4-c184-4da0-afe8-f912778b7ead">
+      <ID>Date OCC ID</ID>
+      <Name>Date OCC ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fa1e2132-22b3-4c9e-a0b4-35f1eda00836">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f442be2f-8511-47cc-a07f-0190604bb67b">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>DateOCC_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="47c52355-d98c-442d-ba90-38cdf850c92a">
+          <AttributeID>DATE OCC</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>DATE OCC</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fd775d2-ac9a-4dd9-a360-5930e8c246f1">
+      <ID>DATE OCC</ID>
+      <Name>DATE OCC</Name>
+      <Type>Date</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af9f812f-bcdb-4d41-b12f-fc0dbf514865">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad22a1c0-f8a0-4c5f-91da-a6c5e381f89f">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>DATE_OCC</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="aa85647c-41be-43b7-919f-070233c2dc92">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22bc642e-5615-42b2-9ea8-daacbfc1e62f">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>MonthOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="39d58bb7-aade-4f5f-8bac-7ef20406381e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19e5c664-1303-4b97-830f-80c4b8e24275">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>QuarterOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ad8a7642-62b6-475f-9211-c75dcd7b5361">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63b10d7e-88b7-4572-a331-0b25f68afbc7">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>YearOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="30aad176-8ad1-4f38-a949-f13e4e8ef14e">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0285babc-82e2-444e-baca-4d9e896cd84f">
+          <TableID>dbo_Dim_DateOCC</TableID>
+          <ColumnID>DATE_OCC</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ceeef3ea-5305-45f1-a477-c498c9c6e4b1">
+          <AttributeID>Month OCC</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Month OCC</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6fe0bd2a-12d0-408b-837e-aca052cc8781">
+      <ID>Month OCC</ID>
+      <Name>Month OCC</Name>
+      <Type>Months</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8330b68d-26b6-40f2-a7fa-93e17575578b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abdace40-bccf-4e0c-bbea-79cb7196529d">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>MonthOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="571f8650-43e3-4781-af5b-33bd39202f6e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6909f398-18c4-4fe6-bc84-3a1789b5e0f5">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>QuarterOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a9c89ee4-daac-4807-b2f7-8181cda6ece3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="359af361-4222-46bb-9860-71383dccea08">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>YearOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2432bb59-e448-4ed7-9c39-99a0d4e19788">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7b773bb0-9aae-4265-9994-922ca16643d6">
+          <TableID>dbo_Dim_DateOCC</TableID>
+          <ColumnID>MonthOCC</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="301077ba-fcd8-4c35-b95b-f36cebcd53bd">
+          <AttributeID>Quarter OCC</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Quarter OCC</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2db40839-779a-4a71-ab96-7262e2ccba60">
+      <ID>Year OCC</ID>
+      <Name>Year OCC</Name>
+      <Type>Years</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0598edde-177a-48a5-87cf-d396f7f13674">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1d81581-0dd3-4bfb-8ed3-441f0b914ed0">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>YearOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fa298186-f998-412b-8b5e-2189792c13ba">
+      <ID>Quarter OCC</ID>
+      <Name>Quarter OCC</Name>
+      <Type>Quarters</Type>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="574da013-2485-4e55-8dd6-593ee3a768ca">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a80e7a28-066a-4529-8622-d96341f24218">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>QuarterOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4b13d946-1bea-4d4c-b406-ea8c0409f566">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa8e3a0c-860a-4488-a4bd-a9c0e10ff7fb">
+            <TableID>dbo_Dim_DateOCC</TableID>
+            <ColumnID>YearOCC</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="616afaa1-f002-4890-9c8e-da090e1d100e">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="90ebd001-25a5-4017-8e3b-9bde4b907b46">
+          <TableID>dbo_Dim_DateOCC</TableID>
+          <ColumnID>QuarterOCC</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8057fd17-3a7d-4f36-9c93-17022636c269">
+          <AttributeID>Year OCC</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Year OCC</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="520cd7b5-35f0-4207-9a5e-93fb8651fd52">
+      <ID>Hierarchy</ID>
+      <Name>YearQuarterMonthDate</Name>
+      <Levels>
+        <Level dwd:design-time-name="e4cacc8a-b426-4035-8f9b-511a0fe10c60">
+          <ID>Year OCC</ID>
+          <Name>Year OCC</Name>
+          <SourceAttributeID>Year OCC</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="dafe0850-7600-407b-8109-db6f8608393e">
+          <ID>Quarter OCC</ID>
+          <Name>Quarter OCC</Name>
+          <SourceAttributeID>Quarter OCC</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b868e1e7-9cfe-450e-b52f-bd999d86d50d">
+          <ID>Month OCC</ID>
+          <Name>Month OCC</Name>
+          <SourceAttributeID>Month OCC</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2091e5ea-5809-41fa-a3ab-00023040f8d5">
+          <ID>DATE OCC</ID>
+          <Name>DATE OCC</Name>
+          <SourceAttributeID>DATE OCC</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="a4f1952f-ae68-42c6-a3de-c6e8b6e78453">
+      <ID>Hierarchy 1</ID>
+      <Name>YearMonth</Name>
+      <Levels>
+        <Level dwd:design-time-name="37922d72-b2db-4d89-9331-7b13f5d2ad86">
+          <ID>Year OCC</ID>
+          <Name>Year OCC</Name>
+          <SourceAttributeID>Year OCC</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="09c62fb7-9d21-4b4d-9fd6-a6adce01d8f9">
+          <ID>Month OCC</ID>
+          <Name>Month OCC</Name>
+          <SourceAttributeID>Month OCC</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="20d054c9-f2ec-41e1-aff2-845dcdeac3c2">
+      <ID>Hierarchy 2</ID>
+      <Name>YearQuarter</Name>
+      <Levels>
+        <Level dwd:design-time-name="372c1382-a304-4ec4-a03c-137629143fdd">
+          <ID>Year OCC</ID>
+          <Name>Year OCC</Name>
+          <SourceAttributeID>Year OCC</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2b8091b9-a874-419b-90e2-dbaef4e65ab9">
+          <ID>Quarter OCC</ID>
+          <Name>Quarter OCC</Name>
+          <SourceAttributeID>Quarter OCC</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,88 @@
+﻿--MSSV: 22521134 - Nguyen Thuong Phuc
+
+
+-- c1:  Liệt kê số lượng tội phạm theo từng loại (Crime Description).
+SELECT [Measures].[NumberOfCases] ON COLUMNS,
+		[Dim CRM].[Crm Cd Desc].members on rows
+FROM [Crime Database];
+
+-- c2: Thống kê top 2 số lượng tội phạm xảy ra nhiều nhất theo từng năm trong khoảng thời gian từ 2020 đến hiện tại.(Date OCC)
+SELECT [Measures].[NumberOfCases] ON COLUMNS,
+NON EMPTY GENERATE([Dim Date OCC].[Year OCC].MEMBERS,
+TOPCOUNT([Dim Date OCC].[Year OCC].CURRENTMEMBER*[Dim CRM].[Crm Cd Desc].CHILDREN,
+2, [Measures].[NumberOfCases])) ON ROWS
+FROM [Crime Database];
+
+
+-- c3: Liệt kê loại vũ khí được sử dụng nhiều nhất trong các tội phạm. 
+SELECT [Measures].[NumberOfCases] ON COLUMNS,
+NON EMPTY (GENERATE([Dim CRM].[Crm Cd Desc].MEMBERS,
+TOPCOUNT([Dim CRM].[Crm Cd Desc].CURRENTMEMBER*([Dim Weapon].[Weapon Desc].CHILDREN-[Dim Weapon].[Weapon Desc].&[None]),
+1,[Measures].[NumberOfCases] )))
+ ON ROWS
+FROM [Crime Database];
+
+-- c4:Top 3 tội phạm có nhiều nạn nhân giới tính Male nhất năm 2022.
+select [Measures].[NumberOfCases] on columns,
+topcount(([Dim Weapon].[Weapon Desc].CHILDREN-[Dim Weapon].[Weapon Desc].&[None],
+[MaleVictim_Cases]),3,[Measures].[NumberOfCases]) on rows
+from [Crime Database];
+
+-- c5: Số lượng tội phạm các loại ở Khu vực 3 (Southwest) năm 2021, sắp xếp theo số lương vụ giảm dần.
+select [Measures].[NumberOfCases] on columns,
+order ( [Dim Weapon].[Weapon Desc].members, [Measures].[NumberOfCases], DESC ) ON ROWS
+FROM [Crime Database]
+WHERE ([Dim AREA].[AREA NAME].&[Southwest], [Dim Date OCC].[Year OCC].&[2021]);
+
+-- c6: Xác định top 3 các khu vực có nhiều vụ án xảy ra nhất.
+
+select [Measures].[NumberOfCases] on columns,
+topcount( [Dim AREA].[AREA NAME].[AREA NAME],3 ,[Measures].[NumberOfCases]) ON ROWS
+FROM [Crime Database]
+WHERE [Dim Date OCC].[Year OCC].[All] ;
+
+-- c7: Tìm số lượng tội phạm xảy ra theo từng loại địa điểm ( ở bãi gửi xe và vỉa hè) năm 2022 và 2023.
+
+select [Measures].[NumberOfCases] on columns,
+crossjoin( {[Dim Date OCC].[Year OCC].&[2022], [Dim Date OCC].[Year OCC].&[2023]},
+{[Dim Premis].[Premis Desc].[PARKING LOT], [Dim Premis].[Premis Desc].[DRIVEWAY]} ) on rows
+from [Crime Database];
+
+
+-- c8:Top 3 loại tội phạm xảy ra nhiều nhất trong bán kính 1000km (khu vực) theo từng năm.
+
+select [Measures].[NumberOfCases] on columns,
+generate(
+	[Dim Date OCC].[Year OCC].children,
+	[Dim Date OCC].[Year OCC].currentmember * 
+	topcount( [AreaInRange1000]*[Dim CRM].[Crm Cd Desc].children,
+	3, [Measures].[NumberOfCases]))on rows
+from [Crime Database];
+
+-- c9: Top 10 vũ khí sử dụng nhiều nhất trong tất cả các vụ án năm 2022. 
+
+select [Measures].[NumberOfCases] on columns,
+head(
+order([Dim Weapon].[Weapon Desc].children - [Dim Weapon].[Weapon Desc].&[None]   ,  [Measures].[NumberOfCases], desc)
+,10) on rows
+FROM [Crime Database]
+WHERE ( [Dim Date OCC].[Year OCC].&[2022]);
+
+-- C10: Số lượng vụ có nạn nhận Nữ (F) dưới 18 tuổi trong vụ Stalking ( bị theo dõi ngoài ý muốn).
+select [Measures].[NumberOfCases] on columns,
+nonempty(
+	order( ([Dim DR].[Vict Sex].&[F], [YoungGroup]) ,[Measures].[NumberOfCases],desc )) on rows
+from [Crime Database]
+where [Dim CRM].[Crm Cd Desc].&[STALKING];
+
+
+-- C11: Top 3 loại vũ khí có xu hướng tăng mạnh nhất trong năm 2023
+
+select [Measures].[Percentage2023_2022] on columns,
+topcount( [Dim Weapon].[Weapon Desc].members, 3,[Measures].[Percentage2023_2022]) on rows
+from [Crime Database];
+
+-- C12: Thống kê số lượng nạn nhận là nữ (Female) dưới 18 tuổi. 
+SELECT [Measures].[NumberOfCases] ON COLUMNS,
+([Dim DR].[Vict Sex].&[F], [YoungGroup] ) on rows
+from [Crime Database];
